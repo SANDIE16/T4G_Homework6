@@ -10,9 +10,8 @@
         font-size: larger;padding: 30px;}
         
 
-        div{ background-image: url(images/firstpichome.jpeg);
+        .center_img{ background-image: url(images/firstpichome.jpeg);
             height: 150px;
-            width: 25%;
             display: block;
             margin: auto;
             width: 270px;
@@ -22,20 +21,21 @@
             text-align: center;
             top: 50%;
             left: 50%;
-            justify-content: center;
-            align-items: center;
+            text-justify: center;
+            text-decoration: none;
             
             
             
-        }
+             }
         button{
             background-color: aliceblue;
             font-size: 13px;
-            color: aliceblue;
+            color: white;
             margin: 50px;
             text-decoration: aliceblue;
             border-radius: 10px;
             background-size: 50px;
+            text-decoration: none;
         }
     span{
         padding-left: 435px;
@@ -45,6 +45,25 @@
         
     }
     
+    .container{
+        list-style: none;
+        display: flex;
+         }
+    .logo{
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+    }
+    .items{
+        padding-right: 30px;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+    footer{
+        font-size: larger;
+        background-color: gray;
+    }
+    
             
         
     
@@ -52,14 +71,24 @@
     
 </head>
 <body>
-    <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/product.html">Products</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-        <li><a href="pages/login.html">Login</a></li>
-        <li><a href="pages/signup.html">Signup</a></li>
-        </ul>
+    
+  
+
+    
+    
+<nav>
+    <ul class="container">
+        <img src="images/logo2.jpg" class="logo">
+        <li class="items"><a href="index.html" style="text-decoration: none;">Home</a></li>
+        <li class="items"><a href="pages/product.html" style="text-decoration: none;">Products</a></li>
+        <li class="items"><a href="pages/contact.html" style="text-decoration: none;">Contact</a></li>   
+    <li class="items"><a href="pages/login.html" style="text-decoration: none;">Login </a></li>
+        <li class="items"><a href="pages/signup.html" style="text-decoration: none;">Signup </a></li>
+    </ul>
+</nav>
+    
+    
+    
 
     <div class="center_img"><p>Taste The Raw Goodness Of Africa</p><button><a href="pages/product.html">Explore Our Products</a></button></div>
    <p class="raw"> African food is <b>diverse</b>,and when you are talking about food,the culture comes in too. With over 54 countries and 3,000 ethnic groups,African foods has much to offer. In this website,we will explore some fascinating facts about African foods. The food is rich in flavor and reflects the continent's varied <b>history,</b>geography and cultural<b>traditions</b>. Bottomline,you can be there are many African countries with great food. <span><button><a href="pages/product.html" style="text-decoration: none; font-size: large;padding: 40px 20px;">Learn More</a></button></span>
@@ -72,7 +101,8 @@
         <label for="">Email</label>
         <input type="email"> <hr>
          <footer>
-            <b>Please follow us on our socials</b>👍👍</p> <i class="fa-brands fa-square-instagram"></i><i ><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-youtube"></i>
+            
+            <p><b>Please follow us on our socials</b>👍👍</p> <span> <i class="fa-solid fa-clover"></i><i>African Goodness</i> <a href="facebook.com"class="fa-brands fa-facebook" style="color: black;text-decoration: none;"></i></a> <a href="instagram.com" class="fa-brands fa-square-instagram"  style="color: black;text-decoration: none;"></i></a> <a href="twitter.com"class="fa-brands fa-twitter"  style="color: black;text-decoration: none;"></i></a> <a href="youtube.com"class="fa-brands fa-youtube"  style="color: black;text-decoration: none;"></i></a></span>
         </footer>
     </form>
 </body>

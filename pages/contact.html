@@ -5,17 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title>
+    <style>
+          .container{
+        list-style: none;
+        display: flex;
+         }
+    .logo{
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+    }
+    .pag{
+        padding-right: 30px;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+    </style>
 </head>
 <body>
+    
+        
     <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html">Signup</a></li>
-        </ul>
-    </nav>
+        <ul class="container">
+            <img src="logo.jpg" class="logo">
+            <li class="pag"><a href="../index.html" style="text-decoration: none;">Home </a></li>
+            <li class="pag"><a href="pages/product.html" style="text-decoration: none;">Products </a></li>
+        <li class="pag"><a href="pages/contact.html" style="text-decoration: none;">Contact </a></li>
+            <li class="pag"><a href="pages/login.html" style="text-decoration: none;">Login </a></li>
+            <li class="pag"><a href="pages/signup.html" style="text-decoration: none;">Signup </a></li>
+            </ul>
+            </nav>
     <h1>This is the contact us page</h1> <p>I dont have a lot going on here now,but <button><a href="login.html">click to login</a></button></p>
      
         <form action="">
