@@ -12,17 +12,44 @@
          }
     .logo{
         margin-right: auto;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+
     }
     .pag{
         padding-right: 30px;
         text-decoration: none;
         margin-right: 30px;
+        align-self: center;
     }
     .pag{
         text-decoration: none;
     }
+    
+    .first{
+        display: flex;
+        height: 400px;
+        width: 100px;
+        padding-bottom: 10px;
+        
+
+    }
+    .second{margin-left: 200px;
+        
+    }
+    .forth{
+        border-radius: 20px;
+        margin-left: 95px;
+        background-color: rgb(46, 132, 179);
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        
+    }
+
+    
+    
+    
     </style>
 </head>
 <body>
@@ -30,19 +57,24 @@
         
     <nav>
         <ul class="container">
-            <img src="logo.jpg" class="logo">
+            <img src="../images/logo2.jpg" class="logo">
             <li class="pag"><a href="../index.html"style="text-decoration: none;">Home </a></li>
             <li class="pag"><a href="../pages/product.html"style="text-decoration: none;">Products </a></li>
             <li class="pag"><a href="../pages/contact.html"style="text-decoration: none;">Contact </a></li>
             <li class="pag"><a href="../pages/login.html"style="text-decoration: none;">Login </a></li>
             <li class="pag"><a href="../pages/signup.html"style="text-decoration: none;">Signup </a></li>
         </ul>
-    </nav>       
-    <h1>This is the contact us page</h1> <p>I dont have a lot going on here now,but <button><a href="login.html">click to login</a></button></p>
+    </nav>
+       <div class="first">
+    <img src="../images/barley.jpg" alt="500">   
+
      
-        <form action="">
-            <div>
-            <label for="">Your Name</label>
+    <div class="second">
+        <form action="" >
+            <h1>Contact Us at African Food Products</h1>  
+            
+       <div>
+           <label for="">Your Name</label>
             <input type="text" name="" id="" placeholder="Full Name">
         </div>
            <div>
@@ -50,9 +82,16 @@
             <input type="text" name="" id="" placeholder="Email Address">
         </div>
         <textarea name="" id="" placeholder="Enter your text here" cols="30" rows="10"></textarea>
-        <p><button>Send</button></p> <hr>
+        <p><button class="forth">Send</button></p>
+        </div>     
+    </div>
+
+         <hr>
         <b>Please follow us on our socials</b>👍👍</p> <p><button><i class="fa-brands fa-square-instagram"></i></button> <button><i class="fa-brands fa-facebook"></i></button> <button><i class="fa-brands fa-twitter"></i></button> <button><i class="fa-brands fa-youtube"></i></button></p>
         </form>
+   
+    
+    
     
 </body>
 </html>

@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
     <style>
-        div{
+        .our{
             text-align: center;
-            font-size: x-large;
+            font-size: xx-large;
             font-style: oblique;
         }
         h2{
             background-color: rgb(136, 136, 218);
             text-size-adjust: x-larger;
             color: aliceblue;
+            width: 350px;
+            height: 50px;
         }
         button{
             background-color: black;
             border-radius: 12px;
             color: white;
+            margin-left: auto;
+            margin-right: auto;
+            
             
         }
         span{
@@ -27,16 +32,45 @@
          }
     .logo{
         margin-right: auto;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
     .items{
         padding-right: 30px;
         text-decoration: none;
         margin-right: 30px;
+        align-self: center;
+    
     }
+    
+    .big{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        ;
+    }
+    .small-container{
         
-        
+        display: flex;
+        flex-wrap: wrap;
+        display: grid;
+        justify-content: space-between;
+        height: 700px;
+        width: 350px;
+    }
+.write{
+    text-align: center;
+}
+    .okay{
+        margin-left: auto;
+        margin-right: auto;
+        height: 180px;
+        width: 350px;
+    } 
+    .butt{
+        text-align: center;
+    } 
+
         
     </style>
     <script src="https://kit.fontawesome.com/5859523907.js" crossorigin="anonymous"></script>
@@ -48,23 +82,109 @@
     
     <nav>
         <ul class="container">
-            <img src="logo.jpg" class="logo">
-        <li class="items"><a href="../pages/contact.html" style="text-decoration: none;">Contact</a></li></li>
+            <img src="../images/logo2.jpg" class="logo">
+            <li class="items"><a href="../index.html" style="text-decoration: none;">Home</a></li>
+            <li class="items"><a href="../pages/product.html" style="text-decoration: none;">Products</a></li>
+            <li class="items"><a href="../pages/contact.html" style="text-decoration: none;">Contact</a></li></li>
             <li class="items"><a href="../pages/login.html" style="text-decoration: none;">Login</a></li></li>
             <li class="items"><a href="../pages/signup.html" style="text-decoration: none;">Signup</a></li>
             </ul>
         </nav>
-    <h1>Our Raw Food Products</h1>
+    <div  class="our">
+        <h1>Our Raw Food Products</h1>
+    </div>
+        
+<div class="big">
+    <div class="small-container">
+        <img src="../images/yam.jpeg" alt="" class="okay" >
+        <h2>African Yams</h2>
+        <div class="write">
+        <p>
+            <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Yam_(vegetable)" style="color: grey;text-decoration: none;">Yam</a></span>,
+            are native to warmer regions of both hemisphere and several species are cultivated as staple food crops in the tropics. In certain tropical cultures,
+            notably in <i>West Africa and New Guinea</i>, the yam is the primary agricultural commodity and the focal point of elaborate rituals. Yams are consumed 
+            as cooked starchy food.
+        </p>
+    </div>
+        
+        <p class="butt"><button><a href="contact.html" style="text-decoration: none; color: white;">Learn More</a></button></p>
+    </div>
     
-            <li class="items"><a href="../index.html" style="text-decoration: none;">Home</a></li>
-            <li class="items"><a href="../pages/product.html" style="text-decoration: none;">Products</a></li>
-    <h2>African Yams</h2>
-    <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Yam_(vegetable)" style="color: grey;text-decoration: none;">Yam</a></span>,are native to warmer regions of boyh hemisphere and several species are cultivated as staple food crops in the tropics. In certain tropical cultures,notably in <i>West Africa and New Guinea</i>,the yam is the primary agricultural commodity and the focal point of elaborate rituals. Yams are consumed as cooked starchy foods.</p> <p><button><a href="contact.html" style="text-decoration: none; color: white;">Learn More</a></button> </p><p><hr></p><p><h2>Our Raw Food Products</h2></p>
-    <p><h3>African Plantain</h3></p>
-    <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Plantain" style="color: grey;text-decoration: none;">Plantain</a></span>,major group of banana varieties (genus Musa) that are staple foods in many tropical areas. The edible fruits of plantain bananas has more starch than the common dessert banana and is not eaten raw. Because plantains have the most starch before they ripen,they are usually green,either <b>boiled or fried</b>,in savory dishes. The ripe fruits often sweet and are often cooked with coconut juive or sugar as a flavoring. Plantains may also be <i>dried</i> for later use in cooking or <i>ground</i> for use as a meal,which can be furthur refined to a flour. <p><button><a href="contact.html" style="color: white;  </p> <h3>African Garden Eggs</h3><span style="font-size: x-large;text-decoration: none"><a href="https://en.wikipedia.org/wiki/Solanum_aethiopicum" style="color: grey;text-decoration: none;">African Garden Eggs</a></span>African garden eggs</a>are a type of eggplant used as a food crop in several countries across Africa. These small,white fruits have a teardrop or roundish shape and are valued for their bitterness. Garden egg is indigenous to <i>sub-Saharan Africa</i> and can be stored for up to three months by allowing it to dry,which is particularly useful in tropical regions where refrigeration may be limited. In Ghana,garden egg is one of the <b>three most consumed vegetable</b>,alongside tomatoes and peppers. It is used in stews and can also be eaten raw. Intwerestenly,the stems and leaves of garden eggs are consumed in some African countries,although not in Ghana. Due to its spongy texture,garden egg is sometimes used as a less expensive meat substitute,as it absorbs ather flavors well. <p><button><a href="contact.html" style="color: white;text-decoration: none;">Learn More</a></button></p> <hr><h2>Our Raw Food Products</h2> <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2<h3>Okro</h3></p> 
-    <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Okra" style="color: grey;text-decoration: none;">Okro</a></span> AAbelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to East Africa.In Nigeria, okra soup is a delicacy and is popular amongst Yorubas, Igbos, Efiks, Hausas, and other Nigerian ethnic groups. In Yoruba, it is referred to as obe Ila.<p><button><a href="contact.html" style="color: white;text-decoration: none;">Learn More</a></button></p>
+    <div class="small-container">
+        <img src="../images/plantain.jpeg" alt="a ripe plantain" class="okay">
+        <h2>African Plantains</h2>
+       <div>
+        <p>
+            <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Plantain" style="color: grey;text-decoration: none;">Plantain</a></span>,
+            major group of banana varieties (genus Musa) that are staple foods in many tropical areas. The edible fruits of plantain bananas has more starch than 
+            the common dessert banana and is not eaten raw. Because plantains have the most starch before they ripen,they are usually green,either <b>boiled or 
+            fried</b>,in savory dishes. The ripe fruits often sweet and are often cooked with coconut juive or sugar as a flavoring. Plantains may also be 
+            <i>dried</i> for later use in cooking or <i>ground</i> for use as a meal,which can be furthur refined to a flour. 
+        </p>
+        </div>
+        <p class="butt"><button class="butt"><a href="contact.html" style="color: white; text-decoration: none;">Learn More</a></button></p>
+    </div>
+    
+    <div class="small-container">
+        <img src="../images/gardenegg.jpeg" alt="" class="okay">
+
+        <h2>African Garden Eggs</h2>
+    <div>
+        <p>
+            <span style="font-size: x-large;text-decoration: none"><a href="https://en.wikipedia.org/wiki/Solanum_aethiopicum" style="color: grey;text-decoration: none;">African Garden Eggs</a></span>are a type of eggplant used as a food crop in several countries across Africa. These small,white fruits have a teardrop or roundish 
+            shape and are valued for their bitterness. Garden egg is indigenous to <i>sub-Saharan Africa</i> and can be stored for up to three months by allowing it to 
+            dry,which is particularly useful in tropical regions where refrigeration may be limited. In Ghana,garden egg is one of the <b>three most consumed vegetable</b>,
+            alongside tomatoes and peppers. It is used in stews and can also be eaten raw. Intwerestenly,the stems and leaves of garden eggs are consumed in some African 
+            countries,although not in Ghana. Due to its spongy texture,garden egg is sometimes used as a less expensive meat substitute,as it absorbs ather flavors well.
+        </p> 
+    </div>
+        <p class="butt"><button><a href="contact.html" style="color: white;text-decoration: none;">Learn More</a></button></p> 
+    </div>
+</div>
+<div class="big">    
+    <div class="small-container">
+        <img src="../images/okro.jpeg" alt="" class="okay">
+        <h2>Okro</h2>
+        <div>
+        <p>
+            
+            <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Okra" style="color: grey;text-decoration: none;">Okro</a></span> 
+            AAbelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to East Africa.
+            In Nigeria, okra soup is a delicacy and is popular amongst Yorubas, Igbos, Efiks, Hausas, and other Nigerian ethnic groups. In Yoruba, it is referred 
+            to as obe Ila.
+        </p>
+    </div>
+        <p class="butt"><button><a href="contact.html" style="color: white;text-decoration: none;">Learn More</a></button></p>
+    </div>
+    
+    <div class="small-container"><img src="../images/maize.jpg" alt="" class="okay" >
+        <h2>African Maize</h2>
+        <div>
+        <p>
+            <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Okra" style="color: grey;text-decoration: none;">Okro</a></span> 
+            AAbelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to East Africa.
+            In Nigeria, okra soup is a delicacy and is popular amongst Yorubas, Igbos, Efiks, Hausas, and other Nigerian ethnic groups. In Yoruba, it is referred 
+            to as obe Ila.
+        </p>
+    </div>
+        <p class="butt"><button><a href="contact.html" style="color: white;text-decoration: none;">Learn More</a></button></p>
+    </div>
+    
+    <div class="small-container">
+        <img  src="../images/cola.jpeg" alt="" class="okay"> 
+        <h2>African Cola Nut</h2>
+        <div>
+        <p>
+            <span style="font-size: x-large;"><a href="https://en.wikipedia.org/wiki/Okra" style="color: grey;text-decoration: none;">Okro</a></span> 
+            AAbelmoschus esculentus, known in some English-speaking countries as lady's fingers, is a flowering plant in the mallow family native to East Africa.
+            In Nigeria, okra soup is a delicacy and is popular amongst Yorubas, Igbos, Efiks, Hausas, and other Nigerian ethnic groups. In Yoruba, it is referred 
+            to as obe Ila.
+        </p>
+    </div>
+        <p class="butt"><button><a href="contact.html" style="color: white;text-decoration: none;">Learn More</a></button></p></div>    
+    </div>
     <footer>
-        <img src="logo.jpg" class="logo">
+        <img src="../images/logo2.jpg" class="logo">
         <b>Please follow us on our socials</b>👍👍</p> <span><a href="facebook.com"class="fa-brands fa-facebook" style="color: black;text-decoration: none;"></i></a> <a href="instagram.com" class="fa-brands fa-square-instagram"  style="color: black;text-decoration: none;"></i></a> <a href="twitter.com"class="fa-brands fa-twitter"  style="color: black;text-decoration: none;"></i></a> <a href="youtube.com"class="fa-brands fa-youtube"  style="color: black;text-decoration: none;"></i></a></span>
     </footer>
 </body>
