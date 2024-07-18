@@ -16,7 +16,15 @@
         display: flex;
         
     }
-        
+
+    .raw p{
+       align-self: center; /*centers vertically*/
+    }
+       
+    .raw a{
+        display: block;
+        margin: 20px auto 0;
+    }
 
         .center_img{ background-image: url(images/aaaa.jpeg);
             height: 420px;
@@ -134,6 +142,29 @@
         text-align: right;
         /* justify-content: end; */
     }
+    .fol{
+        margin-left: 520px;
+        height: 50px;
+        width: 150px;
+        background-color: green;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #hide{
+        display: none;
+    }
+    .eye{  height: 50px;
+        width: 150px;
+        background-color: green;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+
+    }
+   
             
         
     
@@ -163,26 +194,46 @@
     
     
 
-    <div class="center_img"><p>Taste The Raw Goodness Of Africa</p><a href="pages/product.html" style="font-size: large;text-decoration: none;color: white;">Explore Our Products</a></div>
+    <div class="center_img"><p>Taste The Raw Goodness Of Africa</p><a href="pages/product.html" id="explore" style="font-size: large;text-decoration: none;color: white;">Explore Our Products</a></div>
     <h1 class="browse">African Foods</h1>
-  <div class="raw">
-    
-     <p style="font-size: x-large; color:black;"> African food is <b>diverse</b>,and when you are talking about food,the culture comes in too. With over 54 countries and 3,000 ethnic groups,African foods has much to offer. In this website,we will explore some fascinating facts about African foods. The food is rich in flavor and reflects the continent's varied <b>history,</b>geography and cultural<b>traditions</b>. Bottomline,you can be there are many African countries with great food. 
-        <a href="pages/product.html" style="text-decoration: none;color: white;height: 50px;width: 200px;background-color:  rgb(88, 65, 9);padding-inline: 50px;padding-top: 5px;padding-bottom: 5px;">Learn More</a>
-        <div><img src="images/aaaaa.jpeg" width="500" style="height: 420px;"> </div> 
-     </div>
-    <h1 class="browse">Browse Through The African Goodness</h1>
+    <div class="raw">
+        <p style="font-size: x-large; color:black;"> African food is <b>diverse</b>,and when you are talking about 
+        food,the culture comes in too. With over 54 countries and 3,000 ethnic groups,African foods has much to 
+        offer. In this website,we will explore some fascinating facts about African foods. The food is rich in 
+        flavor and reflects the continent's varied <b>history,</b>geography and cultural<b>traditions</b>.
+        Bottomline,you can be there are many African countries with great food. 
+        <a href="pages/product.html" style="text-decoration: none;color: white;height: 50px;width: 130px;background-color:  rgb(88, 65, 9);padding-inline: 50px;padding-top: 5px;padding-bottom: 5px;">Learn More</a>
+        </p>
+    <div><img src="images/aaaaa.jpeg" width="500" style="height: 420px;"> </div> 
+</div>
+    <h1 class="browse" id="brow">Browse Through The African Goodness</h1>
    <div class="big">
-    <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;"> <h3>African Spices</h3></div>
-    <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;"> <h3>African Fruits</h3></div>
-    <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;"> <h3>African Maize</h3></div>
+    <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;" id="spice"> <h3>African Spices</h3></div>
+    <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;" id="fruits"> <h3>African Fruits</h3></div>
+    <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="maize"> <h3>African Maize</h3></div>
     <!-- <div><img src="images/africanleafygreens.jpeg" alt="" style="border-radius: 200px;"> <h3>African Leafy Greens</h3></div> </div> -->
     <!-- <div class="big"> -->
-         <div><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;"> <h3>African Legumes</h3></div>
-    <div><img src="images/vegetables.jpg" alt="" ><h3>African Vegetables</h3></div>
-    <div><img src="images/cocoyam.jpg" alt=""><h3>African Tubers</h3></div> 
-    <div><img src="images/wheat.jpg" ><h3>African Wheat</h3></div>
+         <div class="of"><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;" id="legume"> <h3>African Legumes</h3></div>
+    <div class="of"><img src="images/vegetables.jpg" alt="" id="veggies"><h3>African Vegetables</h3></div>
+    <div class="of"><img src="images/cocoyam.jpg" alt="" id="cocoyam"><h3>African Tubers</h3></div> 
+    <div class="of"><img src="images/wheat.jpg" id="wheat"><h3>African Wheat</h3></div>
+    <div class="of"><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
 </div>
+<button class="fol" id="more-images">Click to load 
+    <i class="fa-solid fa-angles-down"></i></button>
+
+<div class="big" id="hide">
+    <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;"> <h3>African Spices</h3></div>
+    <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;"> <h3>African Fruits</h3></div>
+    <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="be"> <h3>African Maize</h3></div>
+    <div class="of" ><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;"> <h3>African Legumes</h3></div>
+    <div class="of"><img src="images/vegetables.jpg" alt=""><h3>African Vegetables</h3></div>
+    <div class="of"><img src="images/cocoyam.jpg" alt=""><h3>African Tubers</h3></div> 
+    <div class="of"><img src="images/wheat.jpg" ><h3>African Wheat</h3></div>
+    <div class="of"><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
+    <button class="eye" id="close">Click to close <i class="fa-solid fa-angles-up"></i></button>
+</div>
+
 <h3 style="text-align: center;font-size: x-large;text-decoration: underline;">Our Sponsors</h3>
    <div style="display: flex;justify-content: space-around;height: 150px;width: 1200;background-image: url(images/field.jpeg);">
     <img src="images/b.jpeg" alt="" style="border-radius: 120px;">
@@ -211,6 +262,6 @@
             
             <p><b>Please follow us on  our socials</b>👍👍</p> <span> <i class="fa-solid fa-clover"></i><i>African Goodness</i> <a href="https://facebook.com"class="fa-brands fa-facebook" style="color: black;text-decoration: none;"></i></a> <a href="https://instagram.com" class="fa-brands fa-square-instagram"  style="color: black;text-decoration: none;"></i></a> <a href="https://twitter.com"class="fa-brands fa-twitter"  style="color: black;text-decoration: none;"></i></a> <a href="https://youtube.com"class="fa-brands fa-youtube"  style="color: black;text-decoration: none;"></i></a></span>
         </footer>
-    
+    <script src="src/index.js"></script>
 </body>
 </html> 
