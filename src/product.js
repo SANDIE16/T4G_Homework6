@@ -5,5 +5,23 @@ function moreText(){
     hideone.style.display= "none";
 }
 let more = document.getElementById("smore");
-more.addEventListener("click",moreText);
+more.addEventListener("click",moreText);// ends
+
+function seeMoreText(){
+    let hidett= document.getElementById("hidett");
+    hidett.style.display = "inline";
+    let hideone=document.getElementById("semore")
+    hideone.style.display= "none";
+}
+let all = document.getElementById("semore");
+all.addEventListener("click",seeMoreText);//ends
+
+function seeeMoreText(){
+    let hidett= document.getElementById("hidettt");
+    hidett.style.display = "inline";
+    let hideone=document.getElementById("seemore")
+    hideone.style.display= "none";
+}
+let alot = document.getElementById("seemore");
+alot.addEventListener("click",seeeMoreText);//ends
 
