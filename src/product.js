@@ -1,4 +1,4 @@
-function moreText(){
+function moreText(){  // create a see more button to load more text
     let hidet= document.getElementById("hidet");
     hidet.style.display = "inline";
     let hideone=document.getElementById("smore")
@@ -7,7 +7,7 @@ function moreText(){
 let more = document.getElementById("smore");
 more.addEventListener("click",moreText);// ends
 
-function seeMoreText(){
+function seeMoreText(){ // create a see more button to load more text
     let hidett= document.getElementById("hidett");
     hidett.style.display = "inline";
     let hideone=document.getElementById("semore")
@@ -16,7 +16,7 @@ function seeMoreText(){
 let all = document.getElementById("semore");
 all.addEventListener("click",seeMoreText);//ends
 
-function seeeMoreText(){
+function seeeMoreText(){ // create a see more button to load more text
     let hidett= document.getElementById("hidettt");
     hidett.style.display = "inline";
     let hideone=document.getElementById("seemore")

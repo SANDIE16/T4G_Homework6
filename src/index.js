@@ -1,4 +1,4 @@
-function promptName(){//prompting the explore our product button
+function promptName(){//when the user enters explore our product button on the homepage,it takes their name
     let name = prompt("What is your name?");
     pchange=document.querySelector("p");
     pchange.innerHTML=`Welcome ${name} to taste the raw goodness of Africa`;
@@ -7,12 +7,15 @@ function promptName(){//prompting the explore our product button
 }
 
 let explore = document.getElementById("explore");
-explore.addEventListener("mouseenter",promptName);
+explore.addEventListener("mouseenter",promptName);// ends
+
+
+//function focus = when the user clicks on the images it alerts a link to the website of the image
 function alertSpiceLink(){
     alert("https://en.wikipedia.org/wiki/African_cuisine");
 }
 let spice = document.getElementById("spice");
-spice.addEventListener("click", alertSpiceLink);
+spice.addEventListener("click", alertSpiceLink);// ends
 
 
 function alertFruitsLink(){
@@ -20,34 +23,36 @@ function alertFruitsLink(){
 }
 
 let fruits  = document.getElementById("fruits");
-fruits.addEventListener("click", alertFruitsLink);
+fruits.addEventListener("click", alertFruitsLink);// ends
 
 function alertMaizeLink(){
     alert("https://en.wikipedia.org/wiki/African_cuisine");
 }
 let maize = document.getElementById("maize");
-maize.addEventListener("click", alertMaizeLink);
+maize.addEventListener("click", alertMaizeLink);// ends
 
 function alertLegumeLink(){
     alert("https://en.wikipedia.org/wiki/African_cuisine");
 }
 
 let legume = document.getElementById("legume");
-legume.addEventListener("click", alertLegumeLink);
+legume.addEventListener("click", alertLegumeLink);// ends
 
 function alertVeggiesLink(){
     alert("https://en.wikipedia.org/wiki/African_cuisine");
 }
 let veggies = document.getElementById("veggies");
-veggies.addEventListener("click", alertVeggiesLink);
+veggies.addEventListener("click", alertVeggiesLink);// ends
 
 function alertCocoyamLink(){
     alert("https://en.wikipedia.org/wiki/African_cuisine");
 }
 let cocoyam = document.getElementById("cocoyam");
-cocoyam.addEventListener("click", alertCocoyamLink);
+cocoyam.addEventListener("click", alertCocoyamLink);// ends
 
-function loadMore(){
+
+//buttons to show more images
+function loadMore(){ 
     let hide=document.getElementById("hide")
     hide.style.display= "block";
     hide.style.display= "flex";
@@ -57,7 +62,9 @@ function loadMore(){
 
 }
 let moreImages = document.getElementById("more-images");
-moreImages.addEventListener("click", loadMore);
+moreImages.addEventListener("click", loadMore);// ends
+
+//buttons to show less images
 
 function vanish(){
     let imageVanish=document.getElementById("hide")
@@ -66,22 +73,13 @@ function vanish(){
     block.style.display= "block";
 }
 let close = document.getElementById("close");
-close.addEventListener("click",vanish);
+close.addEventListener("click",vanish);// ends
 
-// function blinker(){
-//     let blinkingImage=document.getElementById("blink")
-// blinkingImage.style.color== ('green'?'yellow':'lemon')
-
-
-// }
-// let blink = document.getElementById("blink")
-// blink.addEventListener("mousehover",changeColor)
+//reduce and normalize the sizes of the first four african products on the homepage
 function alertImageChange(){
     let imageChange = document.getElementById("spice");
     imageChange.style.width= "75%";
-    imageChange.style.height= "50%";
-    
-    
+    imageChange.style.height= "50%";   
 }
 let change = document.getElementById("spice");
 change.addEventListener("mouseenter",alertImageChange);
@@ -111,7 +109,6 @@ function alertFruitDecrease(){
     decrease.style.width="";
     decrease.style.height= "";
     decrease.style.transitionDuration = "200ms";
-
 }
 
 let fruitDecrease= document.getElementById("fruits");

@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <style>
-        .raw{background-color: rgb(177, 153, 97);
-             font-size: larger;
-        height: 420px;
-        width: 1200px;
-        margin-left: 22px;
-        /* border: 3px solid grey;  */
-        margin-top: 30px;
+        /* nav styling */
+        .container{  
+        list-style: none;
         display: flex;
-        
+         }
+
+         
+    .logo{
+        margin-right: auto;
+        width: 100px;
+        height: 100px;
     }
 
-    .raw p{
-       align-self: center; /*centers vertically*/
-    }
-       
-    .raw a{
-        display: block;
-        margin: 20px auto 0;
-    }
+         .items{
+        padding-right: 30px;
+        text-decoration: none;
+        margin-right: 30px;
+        align-self: center;
+        }  
 
-        .center_img{ background-image: url(images/aaaa.jpeg);
+         .line{
+        text-decoration: overline;
+        margin-top: 40px;
+        color: green;
+    } 
+
+    h3{
+        font-style: italic;
+    } 
+
+
+
+    /* styling line 204 */
+    .center_img{ background-image: url(images/aaaa.jpeg);
             height: 420px;
             display: block;
             margin: auto;
@@ -36,64 +49,49 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 50px;
             text-align: center;
-          /* border-radius: 20px;
-            border: 30px solid black;
-            color: white;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            text-justify: center;
-            text-decoration: none; */
-            
-            
-            
-             }
+   } 
+  
+    /*styling line 206 */
+    .raw{background-color: rgb(177, 153, 97);
+             font-size: larger;
+        height: 420px;
+        width: 1200px;
+        margin-left: 22px;
+        margin-top: 30px;
+        display: flex;
+        border: 3px solid rgb(226, 222, 222);
+    }
 
-    .you{
-        
-        color: rgb(97, 95, 95);
-        margin-bottom:  10px;
-        margin-right: 150px;
-        
-
+    .raw p{
+       align-self: center;
     }
     
-    .container{
-        list-style: none;
-        display: flex;
-         }
-    .logo{
-        margin-right: auto;
-        width: 100px;
-        height: 100px;
-        /* height: 100px; */
-
+    .raw a{
+        display: block;
+        margin: 20px auto 0;
     }
-
-    /* .logo{
-        background-image: url(images/logo2-removebg-preview.png);
-        width: 70px;
-        height: 70px;
-        background-size: cover; 
-    }*/
-    .items{
-        padding-right: 30px;
+   /* styling line 212 */
+    .of{
         text-decoration: none;
-        margin-right: 30px;
-        /* padding-top: 40px; */
-        align-self: center;
-        
+        color: white;
+        height: 50px;
+        width: 130px;
+        background-color:  rgb(88, 65, 9);
+        padding-inline: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
-    footer{
-        font-size: larger;
-        background-color: gray;
-    }
-    .browse{
+
+      /* styling line 220 */
+   .browse{
         font-size: xx-large;
         text-align: center;
         font-style: italic;
     text-decoration: underline;
     }
+
+
+    /* styling line 221 and 247*/
     .big{
         display: flex;
         justify-content: space-evenly;
@@ -102,47 +100,10 @@
         width: 1200px;
         background-color: rgb(243, 246, 242);
         margin-left: 20px;
-        /* border: 3px solid grey; */
     }
-    h3{
-        font-style: italic;
-    } 
-    .news{
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(30, 30, 74);
-        color: white;
-        margin-top: 20px;
-    }
-    .right{
-        
-        text-align: right;
-        background-color: aliceblue; 
-        color: black;       
-    }
-    .sin{
-        color: white;
-        background-color: rgb(30, 30, 74);
-    }
-    .but{
-        color: white;
-        background-color: rgb(30, 30, 74);
-        border-radius: 1px;
-    }
-    .center-form{
-        /* margin: 20px 0px; */
-        margin: 40px;
-        border:10px solid  rgb(198, 196, 196);
-        background-color: rgb(198, 196, 196);
-        padding-block: 20px;
-        border-radius: 10px;
-        
-    }
-    .up{
-        text-align: right;
-        /* justify-content: end; */
-    }
-    .fol{
+
+        /* styling line 233 */
+       .fol{
         margin-left: 520px;
         height: 50px;
         width: 150px;
@@ -152,9 +113,8 @@
         font-size: 20px;
         border-radius: 5px;
     }
-    #hide{
-        display: none;
-    }
+
+        /* styling line 246 */
     .eye{  height: 50px;
         width: 150px;
         background-color: green;
@@ -162,7 +122,69 @@
         color: white;
         font-size: 20px;
         border-radius: 5px;
+    }
 
+    /* styling line 258 */
+    .news{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(30, 30, 74);
+        color: white;
+        margin-top: 20px;
+    }
+
+   
+    /* styling line 262 */
+    .center-form{
+        
+        margin: 40px;
+        border:10px solid  rgb(198, 196, 196);
+        background-color: rgb(198, 196, 196);
+        padding-block: 20px;
+        border-radius: 10px;
+    }
+
+
+     /* styling line 262 */
+    .right{
+        text-align: right;
+        background-color: aliceblue; 
+        color: black;
+    }
+
+    
+    /* styling line 271*/
+    .but{
+        color: white;
+        background-color: rgb(30, 30, 74);
+        border-radius: 1px;
+    }
+
+
+  
+/* .you{
+        
+        color: rgb(97, 95, 95);
+        margin-bottom:  10px;
+        margin-right: 150px;
+        }
+    
+   
+   
+   .sin{
+        color: white;
+        background-color: rgb(30, 30, 74);
+    } */
+   
+   
+    /* footer styling */
+  footer{
+        font-size: larger;
+        background-color: gray;
+    }
+    
+    #hide{
+        display: none;
     }
    
             
@@ -180,12 +202,11 @@
 <nav>
     <ul class="container">
         <img src="images/logo2-removebg-preview.png"x class="logo">
-         <!-- <div class="logo"></div> -->
-        <li class="items"><a href="index.html" style="text-decoration: none;">Home</a></li>
+    <div class="line"><li class="items"><a href="index.html" style="text-decoration: none; color: green;">Home</a></li></div>
         <li class="items"><a href="pages/product.html" style="text-decoration: none;">Products</a></li>
         <li class="items"><a href="pages/about.html" style="text-decoration: none;">About Us</a></li>
          <li class="items"><a href="pages/contact.html" style="text-decoration: none;">Contact</a></li>   
-    <li class="items"><a href="pages/login.html" style="text-decoration: none;">Login </a></li>
+        <li class="items"><a href="pages/login.html" style="text-decoration: none;">Login </a></li> 
         <li class="items"><a href="pages/signup.html" style="text-decoration: none;">Signup </a></li>
 
     </ul>
@@ -196,13 +217,13 @@
 
     <div class="center_img"><p>Taste The Raw Goodness Of Africa</p><a href="pages/product.html" id="explore" style="font-size: large;text-decoration: none;color: rgb(62, 62, 220);">Explore Our Products</a></div>
     <h1 class="browse">African Foods</h1>
-    <div class="raw">
-        <p style="font-size: x-large; color:black;"> African food is <b>diverse</b>,and when you are talking about 
+ <div class="raw">
+        <p style="font-size: x-large; color:black; text-align: center;"> African food is <b>diverse</b>,and when you are talking about 
         food,the culture comes in too. With over 54 countries and 3,000 ethnic groups,African foods has much to 
         offer. In this website,we will explore some fascinating facts about African foods. The food is rich in 
         flavor and reflects the continent's varied <b>history,</b>geography and cultural<b>traditions</b>.
         Bottomline,you can be there are many African countries with great food. 
-        <a href="pages/product.html" style="text-decoration: none;color: white;height: 50px;width: 130px;background-color:  rgb(88, 65, 9);padding-inline: 50px;padding-top: 5px;padding-bottom: 5px;">Learn More</a>
+        <a href="pages/product.html" class="of">Learn More</a>
         </p>
     <div><img src="images/aaaaa.jpeg" width="500" style="height: 420px;"> </div> 
 </div>
@@ -210,27 +231,25 @@
    <div class="big">
     <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;" id="spice"> <h3>African Spices</h3></div>
     <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;" id="fruits"> <h3>African Fruits</h3></div>
-    <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="maize"> <h3>African Maize</h3></div>
-    <!-- <div><img src="images/africanleafygreens.jpeg" alt="" style="border-radius: 200px;"> <h3>African Leafy Greens</h3></div> </div> -->
-    <!-- <div class="big"> -->
-         <div class="of"><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;" id="legume"> <h3>African Legumes</h3></div>
-    <div class="of"><img src="images/vegetables.jpg" alt="" id="veggies"><h3>African Vegetables</h3></div>
-    <div class="of"><img src="images/cocoyam.jpg" alt="" id="cocoyam"><h3>African Tubers</h3></div> 
-    <div class="of"><img src="images/wheat.jpg" id="wheat"><h3>African Wheat</h3></div>
-    <div class="of"><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
+    <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="maize"> <h3>African Maize</h3></div>     
+    <div><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;" id="legume"> <h3>African Legumes</h3></div>
+    <div><img src="images/vegetables.jpg" alt="" id="veggies"><h3>African Vegetables</h3></div>
+    <div ><img src="images/cocoyam.jpg" alt="" id="cocoyam"><h3>African Tubers</h3></div> 
+    <div><img src="images/wheat.jpg" id="wheat"><h3>African Wheat</h3></div>
+    <div><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
 </div>
 <button class="fol" id="more-images">Click to load 
     <i class="fa-solid fa-angles-down"></i></button>
 
-<div class="big" id="hide">
+<div id="hide" class="big">
     <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;"> <h3>African Spices</h3></div>
     <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;"> <h3>African Fruits</h3></div>
     <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="be"> <h3>African Maize</h3></div>
-    <div class="of" ><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;"> <h3>African Legumes</h3></div>
-    <div class="of"><img src="images/vegetables.jpg" alt=""><h3>African Vegetables</h3></div>
-    <div class="of"><img src="images/cocoyam.jpg" alt=""><h3>African Tubers</h3></div> 
-    <div class="of"><img src="images/wheat.jpg" ><h3>African Wheat</h3></div>
-    <div class="of"><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
+    <div><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;"> <h3>African Legumes</h3></div>
+    <div><img src="images/vegetables.jpg" alt=""><h3>African Vegetables</h3></div>
+    <div><img src="images/cocoyam.jpg" alt=""><h3>African Tubers</h3></div> 
+    <div><img src="images/wheat.jpg" ><h3>African Wheat</h3></div>
+    <div><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
     <button class="eye" id="close">Click to close <i class="fa-solid fa-angles-up"></i></button>
 </div>
 
@@ -245,22 +264,24 @@
         <div><h2>Newsletter</h2>
             <p>Would you like to recieve monthly information about our products and services? </p>
             <p class="up">Sign up here <i class="fa-solid fa-arrow-right"></i></p>
-            
         </div>
         
         <div class="center-form">
           <form action="" class="right">
             <label for="">Email</label>
             <input type="email">
-            <!-- <button class="but">Sign up</button> -->
             <input class="but" type="submit" value="Subscribe">
              </form>
         </div>
     </div>
      <hr>
-         <footer>
-            
-            <p><b>Please follow us on  our socials</b>👍👍</p> <span> <i class="fa-solid fa-clover"></i><i>African Goodness</i> <a href="https://facebook.com"class="fa-brands fa-facebook" style="color: black;text-decoration: none;"></i></a> <a href="https://instagram.com" class="fa-brands fa-square-instagram"  style="color: black;text-decoration: none;"></i></a> <a href="https://twitter.com"class="fa-brands fa-twitter"  style="color: black;text-decoration: none;"></i></a> <a href="https://youtube.com"class="fa-brands fa-youtube"  style="color: black;text-decoration: none;"></i></a></span>
+        <footer>
+            <p><b>Please follow us on  our socials</b>👍👍</p> 
+            <span> <i class="fa-solid fa-clover"></i><i>African Goodness</i> 
+            <a href="https://facebook.com"class="fa-brands fa-facebook" style="color: black;text-decoration: none;"></i></a> 
+            <a href="https://instagram.com" class="fa-brands fa-square-instagram"  style="color: black;text-decoration: none;"></i></a> 
+            <a href="https://twitter.com"class="fa-brands fa-twitter"  style="color: black;text-decoration: none;"></i></a>
+            <a href="https://youtube.com"class="fa-brands fa-youtube"  style="color: black;text-decoration: none;"></i></a></span>
         </footer>
     <script src="src/index.js"></script>
 </body>
