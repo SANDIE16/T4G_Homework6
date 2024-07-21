@@ -26,12 +26,14 @@
         text-decoration: none;
         margin-right: 40px;
         align-self: center;
+
         }  
 
          .line{
         text-decoration: overline;
         margin-top: 40px;
         color: green;
+      font-weight: bold;
     } 
 
     h3{
@@ -46,7 +48,7 @@
             height: 420px;
             display: block;
             margin: auto;
-            width: 1200px;
+            width: auto;
             border: 3px solid grey;
             color: rgb(225, 230, 225);
             font-family: Arial, Helvetica, sans-serif;
@@ -71,7 +73,7 @@
     .raw{background-color: rgb(177, 153, 97);
              font-size: larger;
         height: 370px;
-        width: 1200px;
+        width: auto;
         margin-left: 22px;
         margin-top: 30px;
         display: flex;
@@ -96,26 +98,8 @@
         display: block;
         margin: 20px auto 0;
     }
-   
-    .of{
-        text-decoration: none;
-        color: white;
-        height: 50px;
-        width: 130px;
-        background-color:  rgb(88, 65, 9);
-        padding-inline: 50px;
-        padding-top: 5px;
-        border-radius: 5px;
-    }
-    .of:hover{
-        background-color: white;
-        cursor: pointer;
-        color: black;
-        transform: 0.3s;
 
-    }
-
-      
+    
    .browse{
         font-size: xx-large;
         text-align: center;
@@ -130,7 +114,7 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         height: 580px;
-        width: 1200px;
+        width: 100%;
         background-color: rgb(243, 246, 242);
         margin-left: 20px;
     }
@@ -165,7 +149,7 @@
         background-color: rgb(30, 30, 74);
         color: white;
         margin-top: 20px;
-        width: 1250px;
+        width: auto;
     }
 
    
@@ -222,17 +206,18 @@
   footer{
         font-size: larger;
         background-color: gray;
-        width: 1250px;
+        width: auto;
     }
     
     #hide{
         display: none;
     }
-   
+
             
-        
+</style>
+<link rel="stylesheet" href="src/style.css">
+   
     
-    </style>
     
 </head>
 <body>
@@ -245,11 +230,11 @@
     <ul class="container">
         <img src="images/logo2-removebg-preview.png"x class="logo">
     <div class="line"><li class="items"><a href="index.html" style="text-decoration: none; color: green;">Home</a></li></div>
-        <li class="items"><a href="pages/product.html" style="text-decoration: none;">Products</a></li>
-        <li class="items"><a href="pages/about.html" style="text-decoration: none;">About Us</a></li>
-         <li class="items"><a href="pages/contact.html" style="text-decoration: none;">Contact</a></li>   
-        <li class="items"><a href="pages/login.html" style="text-decoration: none;">Login </a></li> 
-        <li class="items"><a href="pages/signup.html" style="text-decoration: none;">Signup </a></li>
+        <li class="items"><a href="pages/product.html" style="text-decoration: none; color: black;">Products</a></li>
+        <li class="items"><a href="pages/about.html" style="text-decoration: none;color: black;">About Us</a></li>
+         <li class="items"><a href="pages/contact.html" style="text-decoration: none;color: black;">Contact</a></li>   
+        <li class="items"><a href="pages/login.html" style="text-decoration: none;color: black;">Login </a></li> 
+        <li class="items"><a href="pages/signup.html" style="text-decoration: none;color: black;">Signup </a></li>
 
     </ul>
 </nav>
@@ -309,7 +294,7 @@
 
 
 <h3 style="text-align: center;font-size: x-large;text-decoration: underline;">Our Sponsors</h3>
-   <div style="display: flex;justify-content: space-around;height: 150px;width: 1200; background-image: url(images/pro.jpeg);">
+   <div style="display: flex;justify-content: space-around;height: 150px;width: auto; background-image: url(images/pro.jpeg);">
     <img src="images/b.jpeg" alt="" style="border-radius: 120px;">
     <img src="images/bb.jpeg" alt="" style="border-radius: 120px;">
     <img src="images/bbb.jpeg" alt="" style="border-radius: 120px;">
