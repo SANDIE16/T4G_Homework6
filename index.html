@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +22,9 @@
     }
 
          .items{
-        padding-right: 30px;
+        padding-right: 0px;
         text-decoration: none;
-        margin-right: 30px;
+        margin-right: 40px;
         align-self: center;
         }  
 
@@ -50,7 +52,20 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 50px;
             text-align: center;
+            align-items: center;
+            align-content: center;
+            margin-bottom: 90px;
+            
    } 
+   .taste{
+    width: 50%;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   }
   
     
     .raw{background-color: rgb(177, 153, 97);
@@ -60,7 +75,17 @@
         margin-left: 22px;
         margin-top: 30px;
         display: flex;
+        flex-direction: row;
         border: 3px solid rgb(226, 222, 222);
+        align-content: start;
+    }
+
+    .raw_text{
+        flex-direction: column;
+        gap: 8px;
+        align-content: start;
+        align-items: start;
+        text-align: start;
     }
 
     .raw p{
@@ -140,6 +165,7 @@
         background-color: rgb(30, 30, 74);
         color: white;
         margin-top: 20px;
+        width: 1250px;
     }
 
    
@@ -161,6 +187,19 @@
         color: black;
     }
 
+    .new_button{
+        font-size: large;
+        text-decoration: none;
+        color: rgb(62, 62, 220);
+         padding: 8px;
+          background-color: white;
+          border-radius: 3px;
+          width: 200px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        color: green;
+        cursor: pointer;
+    }
     
    
     .but{
@@ -169,7 +208,15 @@
         border-radius: 1px;
     }
 
-
+    .section{
+        margin-top: 90px;
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 12px;
+    }
   
 
   footer{
@@ -210,33 +257,41 @@
     
     
 
-    <div class="center_img"><p>Taste The Raw Goodness Of Africa</p><a href="pages/product.html" id="explore" style="font-size: large;text-decoration: none;color: rgb(62, 62, 220);">Explore Our Products</a></div>
+    <div class="center_img">
+        <p class="taste">Taste The Raw Goodness Of Africa</p><a href="pages/product.html" id="explore" class="new_button">Explore Our Products</a>
+    </div>
+ <div class="section">
     <h1 class="browse">African Foods</h1>
- <div class="raw">
-        <p style="font-size: x-large; color:black; text-align: left; padding-inline-start: 15px; padding-inline-end: 10px;">African food is <b>diverse</b>,and when you are talking about 
-        food,the culture comes in too. With over 54 countries and 3,000 ethnic groups,African foods has much to 
-        offer. In this website,we will explore some fascinating facts about African foods. The food is rich in 
-        flavor and reflects the continent's varied <b>history,</b>geography and cultural<b>traditions</b>.
-        Bottomline,you can be there are many African countries with great food. 
-        <a href="pages/product.html" class="of">Learn More</a>
-        </p>
-    <div><img src="images/5.jpeg" width="500" style="height: 370px;"> </div> 
+    <div class="raw">
+        <div class="raw_text">
+            <p style="font-size: x-large; color:black; text-align: left; padding-inline-start: 15px; padding-inline-end: 10px;">African food is <b>diverse</b>, and when you are talking about 
+            food,the culture comes in too. With over 54 countries and 3,000 ethnic groups,African foods has much to 
+            offer. In this website,we will explore some fascinating facts about African foods. The food is rich in 
+            flavor and reflects the continent's varied <b>history,</b> geography and cultural <b>traditions</b>.
+            Bottomline,you can be there are many African countries with great food. 
+            </p>
+            <a href="pages/product.html" class="new_button">Learn More</a>
+        </div> 
+        <div>
+            <img src="images/5.jpeg" width="500" style="height: 370px;"> 
+        </div> 
+    </div>
 </div>
+<div class="section">
     <h1 class="browse" id="brow">Browse Through The African Goodness</h1>
-   <div class="big">
-    <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;" id="spice"> <h3>African Spices</h3></div>
-    <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;" id="fruits"> <h3>African Fruits</h3></div>
-    <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="maize"> <h3>African Maize</h3></div>     
-    <div><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;" id="legume"> <h3>African Legumes</h3></div>
-    <div><img src="images/vegetables.jpg" alt="" id="veggies"><h3>African Vegetables</h3></div>
-    <div ><img src="images/cocoyam.jpg" alt="" id="cocoyam"><h3>African Tubers</h3></div> 
-    <div><img src="images/wheat.jpg" id="wheat"><h3>African Wheat</h3></div>
-    <div><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
-</div>
-<button class="fol" id="more-images">Click to load 
+    <div class="big">
+        <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;" id="spice"> <h3>African Spices</h3></div>
+        <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;" id="fruits"> <h3>African Fruits</h3></div>
+        <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="maize"> <h3>African Maize</h3></div>     
+        <div><img src="images/africanlegumes.jpeg" alt="" style="margin-top: 40px;" id="legume"> <h3>African Legumes</h3></div>
+        <div><img src="images/vegetables.jpg" alt="" id="veggies"><h3>African Vegetables</h3></div>
+        <div ><img src="images/cocoyam.jpg" alt="" id="cocoyam"><h3>African Tubers</h3></div> 
+        <div><img src="images/wheat.jpg" id="wheat"><h3>African Wheat</h3></div>
+        <div><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
+    </div>
+    <button class="new_button" id="more-images" style="margin: auto;align-self: center;">Click to load 
     <i class="fa-solid fa-angles-down"></i></button>
-
-<div id="hide" class="big">
+    <div id="hide" class="big" style="margin-bottom: 80px;">
     <div><img src="images/spices.jpg" alt="" style="margin-top: 40px;"> <h3>African Spices</h3></div>
     <div><img src="images/african fruits.jpeg" alt="" style="margin-top: 40px;"> <h3>African Fruits</h3></div>
     <div><img src="images/maize.jpg" alt="" style="margin-top: 40px;" id="be"> <h3>African Maize</h3></div>
@@ -245,8 +300,13 @@
     <div><img src="images/cocoyam.jpg" alt=""><h3>African Tubers</h3></div> 
     <div><img src="images/wheat.jpg" ><h3>African Wheat</h3></div>
     <div><img src="images/barley.jpg" alt=""><h3>African Barley</h3></div>
-    <button class="eye" id="close">Click to close <i class="fa-solid fa-angles-up"></i></button>
+    <button class="new_button" id="close"  style="margin: auto;align-self: center;margin-top: 80px;">Click to close <i class="fa-solid fa-angles-up"></i></button>
 </div>
+
+</div>
+
+
+
 
 <h3 style="text-align: center;font-size: x-large;text-decoration: underline;">Our Sponsors</h3>
    <div style="display: flex;justify-content: space-around;height: 150px;width: 1200; background-image: url(images/pro.jpeg);">
