@@ -26,7 +26,6 @@
         text-decoration: none;
         margin-right: 40px;
         align-self: center;
-
         }  
 
          .line{
@@ -145,22 +144,27 @@
     
     .news{
         display: flex;
-        justify-content: space-around;
-        background-color: rgb(30, 30, 74);
+        justify-content: space-between;
+        background-color: green;
         color: white;
-        margin-top: 20px;
-        width: 1230px;
+        /* margin-top: 20px; */
+        width: 1190px;
+        padding: 20px;
+        align-items: center;
+        flex-direction: row;
     }
 
    
    
     .center-form{
         
-        margin: 40px;
-        border:10px solid  rgb(198, 196, 196);
-        background-color: rgb(198, 196, 196);
-        padding-block: 20px;
-        border-radius: 10px;
+        margin-right: 40px;
+        /* border:10px solid  rgb(198, 196, 196); */
+        background-color: #ffffff;
+        padding: 12px;
+        border-radius: 2px;
+        justify-content: center;
+        height: fit-content;
     }
 
 
@@ -292,18 +296,37 @@
 
 
 
-
-<h3 style="text-align: center;font-size: x-large;text-decoration: underline;">Our Sponsors</h3>
-   <div style="display: flex;justify-content: space-around;height: 150px;width: 1200px; background-image: url(images/pro.jpeg);">
-    <img src="images/b.jpeg" alt="" style="border-radius: 120px;">
-    <img src="images/bb.jpeg" alt="" style="border-radius: 120px;">
-    <img src="images/bbb.jpeg" alt="" style="border-radius: 120px;">
-   </div>
+<div class="section" style="margin-bottom: 20px;">
+    <h3 style="text-align: center;font-size: x-large;text-decoration: underline;">Our Sponsors</h3>
+    <div style="display: flex;justify-content: space-around;height: 100px;width: 1200px; background-color: rgb(243, 249, 243);padding: 20px;">
+        <div style="display: flex; flex-direction: column;">
+            <img src="images/b.jpeg" alt="" style="border-radius: 4px;height: 80px;width: 120px;object-fit: cover;object-position: top; border: 2px solid green;">
+            <p style="font-size: smaller; color: #9cd796;">Janet Akoto</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <img src="images/bb.jpeg" alt="" style="border-radius: 4px;height: 80px;width: 120px;object-fit: cover;object-position: top; border: 2px solid green;">
+            <p style="font-size: smaller; color: #9cd796;">Albert Tsum</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <img src="images/bbb.jpeg" alt="" style="border-radius: 4px;height: 80px;width: 120px;object-fit: cover;object-position: top; border: 2px solid green;">
+            <p style="font-size: smaller; color: #9cd796;">Mike Oslen</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <img src="images/bb.jpeg" alt="" style="border-radius: 4px;height: 80px;width: 120px;object-fit: cover;object-position: top; border: 2px solid green;">
+            <p style="font-size: smaller; color: #9cd796;">Divine Agra</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <img src="images/b.jpeg" alt="" style="border-radius: 4px;height: 80px;width: 120px;object-fit: cover;object-position: top; border: 2px solid green;">
+            <p style="font-size: smaller; color: #9cd796; ">Monica Abah</p>
+        </div>
+    
+    </div>
+ </div>
     
     <div class="news">
-        <div><h2>Newsletter</h2>
+        <div><h2> Sign up for our Newsletter</h2>
             <p>Would you like to recieve monthly information about our products and services? </p>
-            <p class="up">Sign up here <i class="fa-solid fa-arrow-right"></i></p>
+            <!-- <p class="up">Sign  <i class="fa-solid fa-arrow-right"></i></p> -->
         </div>
         
         <div class="center-form">
